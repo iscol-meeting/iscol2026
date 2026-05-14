@@ -24,11 +24,11 @@ def load_posters(csv_path):
 def generate_html(posters_by_session):
     """Generate HTML for the posters page."""
     
-    # Session times from the program
+    # Session times from the program (update once schedule is confirmed)
     session_times = {
-        1: "10:15 - 11:15",
-        2: "13:45 - 14:45",
-        3: "16:40 - 17:40"
+        1: "TBD",
+        2: "TBD",
+        3: "TBD"
     }
     
     html = '''<!DOCTYPE html>
@@ -36,17 +36,17 @@ def generate_html(posters_by_session):
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Posters — ISCOL 2025</title>
+    <title>Posters — ISCOL 2026</title>
     <meta
       name="description"
-      content="ISCOL 2025 Accepted Posters. December 18th, 2025 at Bar-Ilan University."
+      content="ISCOL 2026 Accepted Posters. Hebrew University of Jerusalem."
     />
-    
+
     <!-- SEO Meta Tags -->
-    <meta name="keywords" content="ISCOL, computational linguistics, NLP, natural language processing, Israel, Bar-Ilan University, conference, seminar, posters" />
-    <meta name="author" content="ISCOL 2025 Organizing Committee" />
+    <meta name="keywords" content="ISCOL, computational linguistics, NLP, natural language processing, Israel, Hebrew University of Jerusalem, conference, seminar, posters" />
+    <meta name="author" content="ISCOL 2026 Organizing Committee" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://iscol-meeting.github.io/iscol2025/posters.html" />
+    <link rel="canonical" href="https://iscol-meeting.github.io/iscol2026/posters.html" />
     
     <!-- Favicon and Icons -->
     <link rel="icon" type="image/png" href="./assets/iscol-fav.png" />
@@ -70,7 +70,7 @@ def generate_html(posters_by_session):
 
     <header class="site-header" role="banner">
       <div class="container header-inner">
-        <a href="./index.html" class="brand">ISCOL 2025</a>
+        <a href="./index.html" class="brand">ISCOL 2026</a>
         <nav class="nav" aria-label="Primary navigation" role="navigation">
           <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
           <ul id="nav-menu" class="nav-list">
@@ -90,13 +90,13 @@ def generate_html(posters_by_session):
       <section id="posters" class="section">
         <div class="container">
           <h1>Accepted Posters</h1>
-          <p class="subtitle">ISCOL 2025 • December 18th, 2025</p>
+          <p class="subtitle">ISCOL 2026</p>
 
           <!-- Mobile Session Tabs -->
           <div class="session-tabs">
-            <button class="session-tab active" data-session="1">Session 1<br><span class="tab-time">10:15 - 11:15</span></button>
-            <button class="session-tab" data-session="2">Session 2<br><span class="tab-time">13:45 - 14:45</span></button>
-            <button class="session-tab" data-session="3">Session 3<br><span class="tab-time">16:40 - 17:40</span></button>
+            <button class="session-tab active" data-session="1">Session 1<br><span class="tab-time">TBD</span></button>
+            <button class="session-tab" data-session="2">Session 2<br><span class="tab-time">TBD</span></button>
+            <button class="session-tab" data-session="3">Session 3<br><span class="tab-time">TBD</span></button>
           </div>
 
           <div class="sessions-grid">
@@ -138,8 +138,8 @@ def generate_html(posters_by_session):
     <footer class="site-footer" role="contentinfo">
       <div class="container footer-inner">
         <div>
-          <strong>ISCOL 2025</strong>
-          <div>Bar-Ilan University • Israel</div>
+          <strong>ISCOL 2026</strong>
+          <div>Hebrew University of Jerusalem • Israel</div>
         </div>
         <div class="footer-links">
           <a href="./index.html">Home</a>

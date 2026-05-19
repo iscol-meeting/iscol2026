@@ -184,11 +184,11 @@ main > section:nth-of-type(even) { background: #f5f7fa; }
 }
 
 .hero-logo img.iscol-logo {
-  max-width: 280px;
+  max-width: 380px;
 }
 
 .hero-logo img.hebrew-u-logo {
-  max-width: 900;
+  max-width: 90px;
 }
 
 h1 {

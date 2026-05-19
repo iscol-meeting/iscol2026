@@ -188,7 +188,7 @@ main > section:nth-of-type(even) { background: #f5f7fa; }
 }
 
 .hero-logo img.hebrew-u-logo {
-  max-width: 180px;
+  max-width: 900;
 }
 
 h1 {

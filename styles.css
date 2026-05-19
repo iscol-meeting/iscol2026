@@ -184,7 +184,7 @@ main > section:nth-of-type(even) { background: #f5f7fa; }
 
 .hero-title-logo {
   max-width: 480px;
-  max-height: 240px;
+  max-height: 300px;
   width: auto;
   height: auto;
   margin: 0 auto 2px auto;

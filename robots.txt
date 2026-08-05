@@ -2,12 +2,11 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://iscol-meeting.github.io/iscol2025/sitemap.xml
+Sitemap: https://iscol-meeting.github.io/iscol2026/sitemap.xml
 
-# Block any sensitive or unnecessary files
-Disallow: /*.json$
+# Block sensitive or log files
 Disallow: /*.log$
 
-# Allow crawling of important assets
+# Explicitly allow static assets and styles
 Allow: /assets/
-Allow: /styles.css
+Allow: /styles.css

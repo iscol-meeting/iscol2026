@@ -632,6 +632,13 @@ i.fab {
   border-color: #ffffff;
 } */
 
+/* HUJI CS school logo is a wide wordmark, so it needs a larger max-width
+   before the max-height cap can take effect */
+.sponsor-item:nth-child(1) .sponsor-logo img {
+  max-width: min(320px, 100%);
+  max-height: 100px;
+}
+
 .sponsor-item:nth-child(2) .sponsor-logo img {
   max-width: 170px;
   max-height: 100px;

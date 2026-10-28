@@ -76,3 +76,6 @@ build/
 # Cache directories
 .cache/
 .parcel-cache/
+
+# Claude Code
+CLAUDE.md

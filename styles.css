@@ -446,6 +446,39 @@ details a:hover {
   text-decoration: underline;
 }
 
+/* FAQ section toggle */
+.faq-toggle {
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.faq-toggle::before {
+  content: "▶";
+  font-size: 0.6em;
+  color: var(--brand);
+  transition: transform 0.2s ease;
+}
+
+.faq-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+}
+
+.faq-toggle:hover {
+  color: var(--brand);
+}
+
+#faq-content {
+  margin-top: 24px;
+}
+
 /* FAQ Details Styling */
 details {
   margin-bottom: 16px;

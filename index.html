@@ -436,7 +436,10 @@
 
       <section id="faq" class="section section-alt">
         <div class="container">
-          <h2>FAQ</h2>
+          <h2>
+            <button type="button" class="faq-toggle" aria-expanded="false" aria-controls="faq-content">FAQ</button>
+          </h2>
+          <div id="faq-content" hidden>
           <details>
             <summary>What is ISCOL?</summary>
             <p>ISCOL is the Israel Seminar on Computational Linguistics, a community venue for NLP and CL research.</p>
@@ -504,6 +507,7 @@
               <li><strong>ISCOL 2020:</strong> <a href="https://iscol2020.github.io/" target="_blank" rel="noopener noreferrer">Online</a></li>
             </ul>
           </details>
+          </div>
           <p class="highlight">Additional questions? Contact us at <strong><a href="mailto:iscol.pc@gmail.com">iscol.pc@gmail.com</a></strong> or on <strong><a href="https://x.com/iscol_meeting" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter"></i> @iscol_meeting</a></strong>.</p>
         </div>
       </section>
@@ -626,6 +630,23 @@
         });
       });
 
+      // FAQ section is collapsed by default; open it on click or when linked to
+      const faqToggle = document.querySelector('.faq-toggle');
+      const faqContent = document.getElementById('faq-content');
+
+      function setFaqOpen(open) {
+        faqToggle.setAttribute('aria-expanded', String(open));
+        faqContent.hidden = !open;
+      }
+
+      faqToggle.addEventListener('click', () => {
+        setFaqOpen(faqToggle.getAttribute('aria-expanded') !== 'true');
+      });
+
+      if (window.location.hash === '#faq') {
+        setFaqOpen(true);
+      }
+
       // Smooth scrolling for navigation links
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -634,6 +655,10 @@
           const targetElement = document.querySelector(targetId);
 
           if (targetElement) {
+            if (targetId === '#faq') {
+              setFaqOpen(true);
+            }
+
             // Close mobile menu if open
             if (menu && menu.classList.contains('open')) {
               toggle.setAttribute('aria-expanded', 'false');

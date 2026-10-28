@@ -6,8 +6,8 @@ This is a simple static website for ISCOL 2026 (Israel Seminar on Computational 
 
 Files
 - `index.html` — Main page with sections: Home, Call for Papers, Organizing Committee, FAQ, Sponsors
-- `program.html` — Program page (TBD placeholder)
-- `posters.html` — Posters page (TBD placeholder)
+- `program.html` — Redirect to the Program section on the home page
+- `posters.html` — Redirect to the home page (Posters section removed for now)
 - `styles.css` — Minimal responsive styling and navigation
 
 Local Development

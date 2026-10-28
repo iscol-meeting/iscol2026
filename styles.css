@@ -165,7 +165,7 @@ main > section:nth-of-type(even) { background: #f5f7fa; }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 24px;
 }
 
@@ -183,7 +183,7 @@ main > section:nth-of-type(even) { background: #f5f7fa; }
 }
 
 .hero-title-logo {
-  max-width: 480px;
+  max-width: min(480px, 100%);
   max-height: 300px;
   width: auto;
   height: auto;
@@ -577,6 +577,7 @@ details ul li {
 
 .sponsor-logo {
   flex-shrink: 0;
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -806,7 +807,7 @@ i.fab {
   }
   
   .hero-grid { 
-    grid-template-columns: 1fr; 
+    grid-template-columns: minmax(0, 1fr); 
   }
   
   .back-to-top {
@@ -832,7 +833,7 @@ i.fab {
   
   /* Mobile sponsors styling */
   .sponsors-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 16px;
   }
   

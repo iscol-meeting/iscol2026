@@ -610,28 +610,6 @@ i.fab {
   font-style: normal;
 }
 
-/* Intel sponsor with blue background */
-
-.sponsor-item:nth-child(5) {
-  background: #1D68B5;
-}
-
-.sponsor-item:nth-child(5):hover {
-  background: #1D68B5;
-  border-color: #ffffff;
-}
-
-/* BIU Sponsor specific styling */
-.sponsor-item:nth-child(5) {
-  max-width: 1000px;
-  max-height: 600px;
-}
-
-/* .sponsor-item:nth-child(5):hover {
-  background: #0A4128;
-  border-color: #ffffff;
-} */
-
 /* HUJI CS school logo is a wide wordmark, so it needs a larger max-width
    before the max-height cap can take effect */
 .sponsor-item:nth-child(1) .sponsor-logo img {
@@ -642,23 +620,6 @@ i.fab {
 .sponsor-item:nth-child(2) .sponsor-logo img {
   max-width: 170px;
   max-height: 100px;
-}
-
-.sponsor-item:nth-child(4) .sponsor-logo img {
-  max-width: 100px;
-  max-height: 100px;
-}
-
-/* IBM logo size adjustment */
-
-.sponsor-item:nth-child(6) .sponsor-logo img {
-  max-width: 120px;
-  max-height: 120px;
-}
-
-.sponsor-item:nth-child(11) .sponsor-logo img {
-  max-width: 200px;
-  max-height: 200px;
 }
 
 @media (max-width: 720px) {

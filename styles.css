@@ -286,6 +286,48 @@ h2::after {
   border-left: 4px solid #10b981;
 }
 
+/* Keynote speaker card in the Program section */
+.keynote-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 24px 0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.keynote-photo {
+  flex: 0 0 auto;
+  width: 140px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.keynote-label {
+  margin: 0 0 6px;
+  color: var(--brand);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.keynote-title {
+  margin: 0 0 8px;
+}
+
+.keynote-speaker {
+  margin: 0;
+}
+
+@media (max-width: 720px) {
+  .keynote-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 /* Ari Rappoport Memorial: dignified maroon-themed styling */
 .talk-memorial {
   background: linear-gradient(135deg, #fff8f9 0%, #fff0f2 100%);

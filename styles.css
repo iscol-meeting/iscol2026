@@ -385,6 +385,37 @@ h2::after {
   color: var(--muted);
 }
 
+.talk-subtitle {
+  font-style: italic;
+  color: var(--text);
+  margin: 2px 0 4px;
+}
+
+.talk-clickable {
+  cursor: pointer;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.talk-clickable:hover,
+.talk-clickable:focus-visible {
+  box-shadow: 0 4px 12px rgba(42, 157, 143, 0.2);
+  transform: translateY(-1px);
+}
+
+.talk-clickable .abstract-btn {
+  display: inline-block;
+}
+
+.abstract-close {
+  background: none;
+  border: none;
+}
+
+.program-note {
+  margin-top: 16px;
+  font-size: 0.9rem;
+}
+
 /* Oral Session Papers Styling */
 .oral-papers {
   margin-top: 16px;

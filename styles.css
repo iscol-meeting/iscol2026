@@ -723,16 +723,54 @@ i.fab {
   font-style: normal;
 }
 
-/* HUJI CS school logo is a wide wordmark, so it needs a larger max-width
+/* Top-tier sponsors: two per row, larger cards and logos */
+.sponsors-grid.sponsors-top {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-bottom: 0;
+}
+
+.sponsors-top .sponsor-item {
+  min-height: 190px;
+}
+
+.sponsors-top .sponsor-logo img {
+  max-width: min(380px, 100%);
+  max-height: 140px;
+}
+
+/* OriginAI image has wide built-in whitespace, so allow it more room */
+.sponsors-top .sponsor-originai .sponsor-logo img {
+  max-width: min(440px, 100%);
+  max-height: 220px;
+}
+
+/* Remaining sponsors: three per row */
+.sponsors-grid.sponsors-rest {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* HUJI logos are wide wordmarks, so they need a larger max-width
    before the max-height cap can take effect */
-.sponsor-item:nth-child(1) .sponsor-logo img {
+.sponsor-huji .sponsor-logo img {
   max-width: min(320px, 100%);
   max-height: 100px;
 }
 
-.sponsor-item:nth-child(2) .sponsor-logo img {
+.sponsor-huji-cs .sponsor-logo img {
   max-width: min(300px, 100%);
   max-height: 100px;
+}
+
+/* Wix wordmark is very bold and tightly cropped; keep it visually in line */
+.sponsor-wix .sponsor-logo img {
+  max-width: 110px;
+  max-height: 44px;
+}
+
+@media (max-width: 900px) {
+  .sponsors-grid.sponsors-rest {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 720px) {
@@ -911,7 +949,9 @@ i.fab {
   }
   
   /* Mobile sponsors styling */
-  .sponsors-grid {
+  .sponsors-grid,
+  .sponsors-grid.sponsors-top,
+  .sponsors-grid.sponsors-rest {
     grid-template-columns: minmax(0, 1fr);
     gap: 16px;
   }
